@@ -1,0 +1,15 @@
+{
+  "name": "mypkg-lerna-container",
+  "private": true,
+  "description": "lerna harness for mypkg -- do not publish",
+  "scripts": {
+    "test": "tape packages/*/tests/**/*.js" ,
+    "test:lerna-run": "lerna run test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tape": "^5.2.2"
+  }
+}

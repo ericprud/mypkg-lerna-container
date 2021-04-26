@@ -1,0 +1,15 @@
+{
+  "name": "@mypkg/one",
+  "version": "1.0.0",
+  "description": "",
+  "main": "one.js",
+  "scripts": {
+    "test": "echo one: no tests"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "npm-package-example": "^1.1.2"
+  }
+}

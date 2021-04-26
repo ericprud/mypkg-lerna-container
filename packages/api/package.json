@@ -1,0 +1,19 @@
+{
+  "name": "@mypkg/api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "api.js",
+  "scripts": {
+    "test": "tape tests/**/*.js"
+  },
+  "dependencies": {
+    "@mypkg/one": "1.0.0",
+    "@mypkg/two": "1.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tape": "^5.2.2"
+  }
+}

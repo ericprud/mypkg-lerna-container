@@ -1,0 +1,16 @@
+{
+  "name": "@mypkg/two",
+  "version": "1.0.0",
+  "description": "",
+  "main": "two.js",
+  "scripts": {
+    "test": "echo two: no tests"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@mypkg/one": "1.0.0",
+    "npm-package-example": "^1.1.2"
+  }
+}
