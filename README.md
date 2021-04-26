@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/ericprud/mypkg-lerna-container.svg?branch=main)](https://travis-ci.org/ericprud/mypkg-lerna-container)
+
 # mypkg-lerna-container
 
 This is the top-level package in an example managed by [lerna](https://www.npmjs.com/package/lerna).

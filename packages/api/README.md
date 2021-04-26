@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/ericprud/mypkg-lerna-container.svg?branch=main)](https://travis-ci.org/ericprud/mypkg-lerna-container)
+
 # @mypkg/api
 A rich suite of two constants.
 
