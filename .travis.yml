@@ -1,0 +1,16 @@
+# don't build tags, it's redundant
+if: tag IS blank
+
+language: node_js
+os: linux
+
+node_js:
+  - "node"
+install: npm ci && lerna bootstrap
+cache: npm
+script:
+  - npm run test
+
+notifications:
+  email: false
+
