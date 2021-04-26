@@ -10,7 +10,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "lerna": "^4.0.0",
+    "@mypkg/one": "file:packages/one",
+    "@mypkg/two": "file:packages/two",
+    "@mypkg/api": "file:packages/api",
+    "@mypkg/cli": "file:packages/cli",
     "tape": "^5.2.2"
   }
 }

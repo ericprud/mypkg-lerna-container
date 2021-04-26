@@ -9,8 +9,16 @@ This is the top-level package in an example managed by [lerna](https://www.npmjs
 
 ``` shell
 npm ci
-lerna bootstrap
 npm run test
 ```
 
-Because e.g. `@mypkg/two` depends on `@mypgk/one`, you must run `lerna bootstrap` to create the necessary symlinks like `packages/node_modules/two/@mypkg/one` -> `../../../one`. An alternative that does not require `lerna boostrap` is in the `ci-no-bootstrap` branch.
+Because the packages are all listed as `devDependencies`, there's no need of the `lerna boostrap` before running tests (typically in a ci). The downside is that you have to:
+
+``` shell
+rm -r packages/*/node_modules node_modules
+lerna bootstrap
+rm -r node_modules/\@mypkg/
+npm run test
+```
+
+to be sure that the packages have the required (dev) dependencies (analogous to the [disadvantages with hoisting](https://github.com/lerna/lerna/blob/main/doc/hoist.md#disadvantages-with-hoisting)). Keeping `lerna` external (e.g. global) makes `npm ci` faster but makes this development process more complex.
